@@ -25,7 +25,7 @@ export default function Home() {
           onClick={() => setIsDark(!isDark)}
           className={classNames(
             // buttom layout
-            "relative rounded-full w-60 h-24 p-2 z-40 overflow-clip shadow-[inset_0_0_15px_black]",
+            "relative rounded-full w-60 h-24 p-2 z-40 overflow-clip shadow-[inset_0_0_15px_black] transition-colors duration-300",
             // sky color
             "bg-blue-400 dark:bg-[#101034]"
           )}
@@ -63,6 +63,8 @@ export default function Home() {
               />
             </div>
           </div>
+
+          {/* sun/moon */}
           <div
             className={classNames(
               "relative h-full",
